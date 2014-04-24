@@ -3304,7 +3304,7 @@ b#snapshot:active i:after {
 	left: 6px
 }
 .apps.dock {
-	width: 303px;
+	width: 319px;
 	height: 100px;
 	padding-top: 3px;
 	padding-left: 9px;
@@ -3342,7 +3342,9 @@ i.icon, a.icon, div.icon {
 	left: -6px
 }
 .apps.dock i.icon, .apps.dock div.icon {
-	margin-top: 18px
+	margin-top: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .apps .pagination {
 	position: absolute;
@@ -3532,20 +3534,8 @@ i.camera:after {
 	margin: 18px;
 }
 div.settings {
-	background: #444;
-	box-shadow: inset 0 0 5px #333
-}
-div.settings:before {
-	content: "";
-	display: block;
-	width: 32px;
-	height: 32px;
-	border: 3px solid #eee;
-	border-radius: 100%;
-	position: absolute;
-	top: 9px;
-	left: 9px;
-	z-index: 2
+	background-image: url(./logo/com.android.settings.png);
+	
 }
 div.settings ul.outer li {
 	width: 4px;
@@ -3642,18 +3632,6 @@ div.settings ul.outer li:nth-child(17) {
 	-webkit-transform: rotate(191deg);
 	-moz-transform: rotate(191deg);
 	transform: rotate(191deg)
-}
-div.settings:after {
-	content: "";
-	width: 32px;
-	height: 32px;
-	border-radius: 100%;
-	background: #444;
-	box-shadow: inset 0 0 3px #111;
-	position: absolute;
-	z-index: 3;
-	top: 12px;
-	left: 12px
 }
 div.settings em {
 	width: 12px;
@@ -4107,7 +4085,7 @@ i.appstore em:after {
 	transform: rotate(10deg)
 }
 i.phone {
-	background: #23be22;
+	background-image: url(./logo/com.android.contacts.png);
 	cursor: pointer
 }
 i.phone b {
@@ -4144,19 +4122,8 @@ i.phone b:after {
 	border-radius: 0 3px 3px 0
 }
 i.mail {
-	background: #4e8dda;
+	background-image: url(./logo/com.android.email.png);
 	cursor: pointer
-}
-i.mail:before {
-	content: "";
-	display: block;
-	width: 36px;
-	height: 26px;
-	background: #fff;
-	border-radius: 3px;
-	position: absolute;
-	left: 10px;
-	top: 15px
 }
 i.mail b {
 	width: 1px;
@@ -4207,16 +4174,6 @@ i.mail em:after {
 div.safari {
 	background: #4e8dda;
 	cursor: pointer
-}
-div.safari:after {
-	content: "";
-	width: 16px;
-	height: 16px;
-	border: 2px solid #ddd;
-	position: absolute;
-	border-radius: 100%;
-	top: 18px;
-	left: 18px
 }
 div.safari ul.points li {
 	content: "";
@@ -4560,28 +4517,9 @@ i.game-center {
 	background: #111
 }
 div.clock {
-	background: #111
+	background-image: url(./logo/com.android.alarmclock.png);
 }
-div.clock:before {
-	content: "";
-	width: 44px;
-	height: 44px;
-	background: #fff;
-	display: block;
-	border-radius: 100%;
-	margin: 6px
-}
-div.clock:after {
-	content: "";
-	width: 3px;
-	height: 3px;
-	border-radius: 100%;
-	border: 1px solid #111;
-	position: absolute;
-	top: 26px;
-	left: 26px;
-	display: block
-}
+
 div.clock b {
 	width: 1px;
 	height: 18px;
@@ -4733,30 +4671,7 @@ div.videos ul.body li:nth-child(3) {
 	left: 25px
 }
 i.maps {
-	background: #3da8e9
-}
-i.maps:before {
-	content: "";
-	display: block;
-	width: 7px;
-	height: 7px;
-	border-radius: 100%;
-	border: 9px solid #fff;
-	position: absolute;
-	top: 11px;
-	left: 16px
-}
-i.maps:after {
-	content: "";
-	width: 0;
-	height: 0;
-	vertical-align: middle;
-	border-left: 12px solid transparent;
-	border-right: 11px solid transparent;
-	border-top: 18px solid #fff;
-	position: absolute;
-	top: 28px;
-	left: 17px
+	background:  url(./logo/com.autonavi.minimap.png);
 }
 div.photos {
 	background-image: url(./logo/com.cooliris.media.png);
@@ -4793,36 +4708,7 @@ div.photos em {
 	left: 26px;
 	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.25)
 }
-div.photos em:before {
-	content: "";
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	width: 5px;
-	height: 16px;
-	background: #4a8149;
-	position: absolute;
-	top: 4px;
-	left: 8px;
-	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.25);
-	-webkit-transform: rotate(60deg);
-	-moz-transform: rotate(60deg);
-	transform: rotate(60deg)
-}
-div.photos em:after {
-	content: "";
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	width: 5px;
-	height: 16px;
-	background: #4a8149;
-	position: absolute;
-	top: 5px;
-	left: -9px;
-	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.25);
-	-webkit-transform: rotate(115deg);
-	-moz-transform: rotate(115deg);
-	transform: rotate(115deg)
-}
+
 div.photos ul.petals li {
 	width: 5px;
 	height: 40px;
@@ -4920,36 +4806,7 @@ div.photos ul.petals li:nth-child(17) {
 	transform: rotate(191deg)
 }
 i.notes {
-	background: #50392b;
-	cursor: pointer;
-	background: -moz-linear-gradient(top, rgba(80, 57, 43, 1) 0, rgba(80, 57, 43, 1) 27%, rgba(247, 244, 180, 1) 27%, rgba(247, 244, 180, 1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(80, 57, 43, 1)), color-stop(27%, rgba(80, 57, 43, 1)), color-stop(27%, rgba(247, 244, 180, 1)), color-stop(100%, rgba(247, 244, 180, 1)));
-	background: -webkit-linear-gradient(top, rgba(80, 57, 43, 1) 0, rgba(80, 57, 43, 1) 27%, rgba(247, 244, 180, 1) 27%, rgba(247, 244, 180, 1) 100%);
-	background: -o-linear-gradient(top, rgba(80, 57, 43, 1) 0, rgba(80, 57, 43, 1) 27%, rgba(247, 244, 180, 1) 27%, rgba(247, 244, 180, 1) 100%);
-	background: -ms-linear-gradient(top, rgba(80, 57, 43, 1) 0, rgba(80, 57, 43, 1) 27%, rgba(247, 244, 180, 1) 27%, rgba(247, 244, 180, 1) 100%);
-	background: linear-gradient(to bottom, rgba(80, 57, 43, 1) 0, rgba(80, 57, 43, 1) 27%, rgba(247, 244, 180, 1) 27%, rgba(247, 244, 180, 1) 100%)
-}
-i.notes:before {
-	content: "";
-	display: block;
-	width: 56px;
-	height: 1px;
-	background: #89b99d;
-	position: absolute;
-	top: 21px;
-	left: 0;
-	opacity: .75
-}
-i.notes:after {
-	content: "";
-	display: block;
-	width: 56px;
-	height: 1px;
-	background: #89b99d;
-	position: absolute;
-	top: 28px;
-	left: 0;
-	opacity: .75
+	background-image: url(./logo/com.meizu.notepaper.png);
 }
 i.notes b {
 	content: "";
@@ -5003,7 +4860,7 @@ i.notes em:after {
 	opacity: .75
 }
 i.weather {
-	background: #649fef;
+	background-image: url(./logo/com.calendar.UI.png);
 	color: #fff;
 	font-size: 12px
 }
@@ -5044,19 +4901,7 @@ i.reminders b {
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg)
 }
-i.reminders b:before {
-	display: block;
-	content: "";
-	width: 8px;
-	height: 18px;
-	background: #fff;
-	position: absolute;
-	left: -5px;
-	bottom: -10px;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	transform: rotate(90deg)
-}
+
 i.recombu, a.recombu {
 	cursor: pointer;
 	background: #5a9ec0;
@@ -5370,4 +5215,10 @@ i.calendar span.date {
 	top: -85px;
 	left: 10px
 }
+}
+
+/******************by vita*******************/
+.apps .icon{
+	background-color: transparent;
+	background-size:61px 61px; 
 }
