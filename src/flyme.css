@@ -160,9 +160,6 @@ b.home span {
 	top: 25px;
 	left: 34px;
 }
-b.home:active {
-	box-shadow: inset 0 0 10px #000
-}
 b.home:active span {
 	top: 23px
 }
@@ -550,7 +547,7 @@ b.home:active span {
 }
 #iPhone.on .status-bar .btn {
 	display: block;
-	width: 318px;
+	width: 100%;
 	height: 18px;
 	position: absolute;
 	cursor: pointer;
@@ -1358,10 +1355,11 @@ i.airplane em:before {
 	position: absolute;
 	background: #ddd;
 	width: 328px;
-	height: 534px;
+	height: 491px;
 	display: block;
 	z-index: 100;
-	overflow: hidden
+	overflow: scroll;
+	top: 28px;
 }
 #messages ul.msgs li {
 	display: block;
@@ -1506,7 +1504,7 @@ i.airplane em:before {
 	width: 25px;
 	height: 36px;
 	line-height: 36px;
-	margin: 0 3px 12px;
+	margin: 0 3.85px 12px;
 	font-size: 18px;
 	font-weight: bold;
 	color: #111;
@@ -1626,18 +1624,18 @@ i.airplane em:before {
 #notes textarea {
 	position: absolute;
 	background: #fff;
-	width: 288px;
-	height: 426px;
+	width: 302px;
+	height: 392px;
 	border: 0;
 	z-index: 100;
-	overflow: scroll;
+	overflow: hidden;
 	top: 42px;
 	left: 0;
 	resize: none;
 	padding: 12px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	line-height: 18px
+	line-height: 18px;
 }
 #calendar .top-bar b, #calendar .top-bar i {
 	background: #de342d
@@ -1982,7 +1980,8 @@ i.airplane em:before {
 }
 #mail ul {
 	position: absolute;
-	top: 41px
+	top: 41px;
+	width: 324px;
 }
 #mail ul li {
 	border-bottom: 1px solid #ccc;
@@ -2049,7 +2048,7 @@ i.airplane em:before {
 	font-weight: normal
 }
 #phone {
-	background: #222
+	background: #ccc
 }
 #phone a {
 	color: #fff;
@@ -2057,10 +2056,8 @@ i.airplane em:before {
 }
 #phone .number {
 	height: 80px;
-	background: #111;
-	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;
-	color: #fff;
+	background: #ccc;
+	color: #333;
 	font-size: 40px;
 	line-height: 75px;
 	position: relative
@@ -2077,22 +2074,22 @@ i.airplane em:before {
 #phone ul.keypad {
 	position: absolute;
 	top: 95px;
-	width: 328px;
-	height: 365px
+	width: 305px;
+	height: 365px;
+	padding: 0 10px 0 10px;
+	background-color: #ccc;
 }
 #phone ul.keypad li {
 	float: left;
 	position: relative;
-	color: #fff;
-	width: 68px;
+	color: #444;
+	width: 98px;
 	height: 68px;
-	margin: 0 0 9px 24px;
-	border-radius: 100%;
-	background: #111;
-	border: 2px solid #fff;
+	margin: 0 0 3px 3px;
+	background: #fff;
 	font-size: 32px;
 	line-height: 55px;
-	cursor: pointer
+	cursor: pointer;
 }
 #phone ul.keypad li span {
 	font-size: 11px;
@@ -2105,7 +2102,7 @@ i.airplane em:before {
 	opacity: .7
 }
 #phone .bottom-bar {
-	border-top: 1px solid #333
+	border-top: 1px solid #333;
 }
 #phone .bottom-bar ul li {
 	width: 20%;
@@ -2131,7 +2128,7 @@ i.airplane em:before {
 	text-align: right;
 	position: absolute;
 	top: 427px;
-	left: 107px
+	left: 117px;
 }
 #phone b.call i {
 	background: 0;
@@ -2226,21 +2223,22 @@ div.keypad ul li {
 i.delete {
 	width: 24px;
 	height: 24px;
-	background: #fff;
+	background: #333;
 	border-radius: 0 3px 3px 0;
 	position: absolute;
 	bottom: 74px;
 	right: 45px;
 	font-size: 30px;
 	line-height: 20px;
-	cursor: pointer
+	cursor: pointer;
+	color: #ccc;
 }
 i.delete:before {
 	content: "";
 	width: 0;
 	height: 0;
 	border-top: 12px solid transparent;
-	border-right: 12px solid #fff;
+	border-right: 12px solid #333;
 	border-bottom: 12px solid transparent;
 	position: absolute;
 	top: 0;
@@ -2352,19 +2350,19 @@ i.contacts.phone-app {
 	-webkit-transform: scale(0.8)
 }
 i.contacts.phone-app b {
-	border-bottom: 11px solid #fff;
-	top: -14px
+	border-bottom: 11px solid #333;
+	top: -14px;
 }
 i.contacts.phone-app em {
-	background: #fff;
+	background: #333;
 	top: -28px
 }
 i.contacts.phone-app em:before {
-	background: #fff
+	background: #333
 }
 i.contacts.phone-app span {
 	position: absolute;
-	color: #fff;
+	color: #333;
 	font-size: 24px;
 	top: -30px;
 	left: -14px
@@ -2554,7 +2552,7 @@ iframe.recombu {
 	border-radius: 100%;
 	position: absolute;
 	top: 28px;
-	right: 13px
+	right: 4px
 }
 #safari .top-bar span.reload:before {
 	content: "";
@@ -3307,12 +3305,12 @@ b#snapshot:active i:after {
 	position: absolute
 }
 i.icon, a.icon, div.icon {
-	width: 61px;
-	height: 61px;
+	width: 51px;
+	height: 51px;
 	float: left;
 	position: relative;
 	font-weight: 700;
-	margin: 0 9px 26px;
+	margin: 0 14px 26px;
 }
 .icon span.name {
 	position: absolute;
@@ -3327,8 +3325,8 @@ i.icon, a.icon, div.icon {
 }
 .apps.dock i.icon, .apps.dock div.icon {
 	margin-top: 18px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 .apps .pagination {
 	position: absolute;
@@ -4888,11 +4886,12 @@ i.reminders b {
 
 i.recombu, a.recombu {
 	cursor: pointer;
-	background: #5a9ec0;
 	border: 0;
 	width: 56px;
 	height: 56px;
-	font-family: Helvetica, Arial, sans-serif
+	font-family: Helvetica, Arial, sans-serif;
+	background-image: url(./images/me.jpg);
+	background-size: 100% 100%;
 }
 i.recombu span.bg, a.recombu span.bg {
 	width: 48px;
@@ -4950,10 +4949,10 @@ ul#colours {
 	padding: 10px 0 10px 10px;
 	border-radius: 10px;
 	box-shadow: inset 0 0 5px #bbb;
-	margin: 0 0 15px 22px;
+	margin: 0 0 15px 90px;
 	overflow: hidden;
 	text-align: left;
-	width: 352px
+	width: 200px
 }
 ul#colours li.select {
 	width: 105px;
@@ -5200,9 +5199,10 @@ i.calendar span.date {
 	left: 10px
 }
 }
-
-/******************by vita*******************/
 .apps .icon{
 	background-color: transparent;
-	background-size:61px 61px; 
+	background-size:100% 100%; 
+}
+.widget{
+	height: 100px;
 }
