@@ -5032,18 +5032,7 @@ ul#colours li a.gold {
 #colour.white .inner-2 {
 	border: 2px solid #eee
 }
-#colour.white b.home {
-	background: #ddd;
-	background: -moz-linear-gradient(45deg, rgba(221, 221, 221, 1) 0, rgba(255, 255, 255, 1) 99%);
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(221, 221, 221, 1)), color-stop(99%, rgba(255, 255, 255, 1)));
-	background: -webkit-linear-gradient(45deg, rgba(221, 221, 221, 1) 0, rgba(255, 255, 255, 1) 99%);
-	background: -o-linear-gradient(45deg, rgba(221, 221, 221, 1) 0, rgba(255, 255, 255, 1) 99%);
-	background: -ms-linear-gradient(45deg, rgba(221, 221, 221, 1) 0, rgba(255, 255, 255, 1) 99%);
-	background: linear-gradient(45deg, rgba(221, 221, 221, 1) 0, rgba(255, 255, 255, 1) 99%)
-}
-#colour.white b.home:active {
-	box-shadow: inset 0 0 10px #777
-}
+
 #colour.red #iPhone {
 	border: 3px solid #ac131a;
 	background: #d62727;
