@@ -552,12 +552,12 @@ $(function() {
 	});
 	$(".status-bar .btn").click(function() {
 		$("#pull-down").slideToggle(200);
-		$(this).css({background:'#111',opacity:'0.9'});
+		// $(this).css({background:'#111',opacity:'0.9'});
 		
 	});
 	$("#pull-down b.handle-btn").click(function() {
 		$("#pull-down").slideUp(200)
-		$('.status-bar').css({opacity:'1',background:'#fff'});
+		// $('.status-bar').css({opacity:'1',background:'#fff'});
 	});
 	$("#messages input").click(function() {
 		$("#messages .ctr").animate({

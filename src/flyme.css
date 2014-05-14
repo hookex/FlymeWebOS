@@ -23,15 +23,18 @@ ol, ul {
 #iPhone {
 	font-family: Helvetica, Arial;
 	font-size: 14px;
-	width: 358px;
+	width: 374px;
 	height: 765px;
-	border-radius: 43px;
+	border-radius: 65px;
 	margin: 0 0 25px 20px;
 	position: relative;
-	border: 3px solid #111;
+	border: 3px solid #868381;
 	overflow: visible;
-	box-shadow: 0 0 20px #aaa;
-	background: #000;
+	box-shadow: #c1bfbf 0 0 0 1px;
+	-moz-box-shadow: #c1bfbf 0 0 0 1px;
+	-webkit-box-shadow: #c1bfbf 0 0 0 1px;
+	padding: 2px;
+	-webkit-font-smoothing: antialiased;
 	background: #000;
 	background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(68, 68, 68, 1)));
@@ -39,18 +42,20 @@ ol, ul {
 	background: -o-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
 	background: -ms-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
 	background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%)
+	/*background-image: url(./images/mz.png);
+	background-size: 374px 765px;*/
 }
 .inner-1 {
-	width: 356px;
+	width: 372px;
 	height: 763px;
 	border: 1px solid #555;
-	border-radius: 41px
+	border-radius: 65px
 }
 .inner-2 {
-	width: 352px;
+	width: 368px;
 	height: 759px;
 	border: 2px solid #111;
-	border-radius: 40px
+	border-radius: 65px
 }
 .screen {
 	position: absolute;
@@ -165,8 +170,8 @@ b.home:active span {
 }
 .camera-front {
 	position: absolute;
-	top: 21px;
-	left: 171px;
+	top: 29px;
+	left: 316px;
 	width: 14px;
 	height: 14px;
 	border-radius: 14px;
@@ -196,12 +201,13 @@ b.home:active span {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1)
 }
 .speaker {
-	width: 70px;
+	width: 38px;
 	height: 14px;
 	border-radius: 10px;
 	position: absolute;
-	top: 45px;
-	left: 143px;
+	top: 28px;
+	left: 169px;
+	overflow: hidden;
 	box-shadow: inset 0 0 5px #000;
 	background: #000;
 	background: -moz-linear-gradient(top, #000 0, #444 100%);
@@ -2718,10 +2724,10 @@ iframe.recombu {
 }
 #music .album-cover b {
 	font-size: 15px;
-	color: #888;
+	color: rgb(252, 248, 248);
 	position: absolute;
 	top: 150px;
-	right: 30px
+	right: 134px;
 }
 #music .controls i.play {
 	width: 0;
@@ -3001,6 +3007,9 @@ iframe.recombu {
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	transform: rotate(90deg)
+}
+#music .album-cover{
+	background-image: url(./images/nongda.jpg);
 }
 #music i.shuffle em {
 	width: 0;
@@ -3396,7 +3405,7 @@ i.icon, a.icon, div.icon {
 	color: #111;
 	text-align: left;
 	padding: 0 0 1px;
-	width: 292px;
+	width: 308px;
 	margin: 12px;
 	border-radius: 10px;
 	overflow: hidden
@@ -4283,8 +4292,9 @@ div.safari b:after {
 	z-index: 4
 }
 i.music {
-	background: #f7951d;
-	cursor: pointer
+	/*background: #f7951d;*/
+	cursor: pointer;
+	background-image: url(./logo/com.meizu.media.music.png);
 }
 i.music .top {
 	background: #fff;
@@ -5205,4 +5215,7 @@ i.calendar span.date {
 }
 .widget{
 	height: 100px;
+	background-image: url(./images/widget.png);
+	background-size: 316px 80px;
+	background-repeat: no-repeat;
 }
