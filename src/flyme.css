@@ -21,41 +21,43 @@ ol, ul {
 	background: transparent
 }
 #iPhone {
-	font-family: Helvetica, Arial;
-	font-size: 14px;
-	width: 374px;
-	height: 765px;
-	border-radius: 65px;
-	margin: 0 0 25px 20px;
-	position: relative;
-	border: 3px solid #868381;
-	overflow: visible;
-	box-shadow: #c1bfbf 0 0 0 1px;
-	-moz-box-shadow: #c1bfbf 0 0 0 1px;
-	-webkit-box-shadow: #c1bfbf 0 0 0 1px;
-	padding: 2px;
-	-webkit-font-smoothing: antialiased;
-	background: #000;
-	background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(68, 68, 68, 1)));
-	background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
-	background: -o-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
-	background: -ms-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
-	background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%)
-	/*background-image: url(./images/mz.png);
-	background-size: 374px 765px;*/
+font-family: Helvetica, Arial;
+font-size: 14px;
+width: 374px;
+height: 765px;
+/*border-radius: 65px;*/
+margin: 0 0 25px 20px;
+position: relative;
+/*border: 3px solid #868381;*/
+overflow: visible;
+/*box-shadow: #c1bfbf 0 0 0 1px;
+-moz-box-shadow: #c1bfbf 0 0 0 1px;
+-webkit-box-shadow: #c1bfbf 0 0 0 1px;*/
+padding: 2px;
+-webkit-font-smoothing: antialiased;
+/*background: #000;
+background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(68, 68, 68, 1)));
+background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+background: -o-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%);
+background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0, rgba(68, 68, 68, 1) 100%)*/
+background-image: url(./images/mz.png);
+background-position: -152px 14px;
+background-size: 715px 738px;
+background-repeat: no-repeat;
 }
 .inner-1 {
 	width: 372px;
 	height: 763px;
-	border: 1px solid #555;
-	border-radius: 65px
+	/*border: 1px solid #555;*/
+	/*border-radius: 65px*/
 }
 .inner-2 {
 	width: 368px;
 	height: 759px;
-	border: 2px solid #111;
-	border-radius: 65px
+	/*border: 2px solid #111;*/
+	/*border-radius: 65px*/
 }
 .screen {
 	position: absolute;
@@ -109,10 +111,10 @@ ol, ul {
 	width: 61px;
 	height: 14px;
 	position: absolute;
-	top: -13px;
-	left: 244px;
+	top: 15px;
+	left: 229px;
 	z-index: 9999;
-	cursor: pointer
+	cursor: pointer;
 }
 .lock span {
 	display: block;
@@ -132,19 +134,19 @@ ol, ul {
 }
 .volume {
 	width: 10px;
-	height: 26px;
+	height: 75px;
 	position: absolute;
-	top: 155px;
-	left: -7px;
+	top: 152px;
+	left: 8px;
 	border-radius: 2px 0 0 2px;
-	cursor: pointer
+	cursor: pointer;
 }
 .volume.down {
 	top: 210px
 }
 .volume span {
 	width: 4px;
-	height: 26px;
+	height: 100%;
 	position: absolute
 }
 b.home {
@@ -152,8 +154,8 @@ b.home {
 	height: 70px;
 	border-radius: 70px;
 	position: absolute;
-	left: 144px;
-	bottom: 25px;
+	left: 145px;
+	bottom: 62px;
 	cursor: pointer;
 }
 b.home span {
@@ -170,8 +172,8 @@ b.home:active span {
 }
 .camera-front {
 	position: absolute;
-	top: 29px;
-	left: 316px;
+	top: 41px;
+	left: 297px;
 	width: 14px;
 	height: 14px;
 	border-radius: 14px;
@@ -201,11 +203,11 @@ b.home:active span {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1)
 }
 .speaker {
-	width: 38px;
+	width: 35px;
 	height: 14px;
 	border-radius: 10px;
 	position: absolute;
-	top: 28px;
+	top: 42px;
 	left: 169px;
 	overflow: hidden;
 	box-shadow: inset 0 0 5px #000;
@@ -3428,7 +3430,7 @@ i.icon, a.icon, div.icon {
 	margin: 0 12px 15px 55px
 }
 .notification b {
-	width: 145px;
+	width: 153px;
 	height: 28px;
 	line-height: 28px;
 	float: left;
@@ -3438,7 +3440,7 @@ i.icon, a.icon, div.icon {
 	cursor: pointer
 }
 .notification b.close {
-	width: 144px;
+	width: 152px;
 	margin: 0 1px;
 	border-radius: 0 0 0 10px
 }
@@ -5003,8 +5005,11 @@ ul#colours li a.gold {
 #colour.black ul#colours li a.black, #colour.white ul#colours li a.white, #colour.red ul#colours li a.red, #colour.blue ul#colours li a.blue, #colour.pink ul#colours li a.pink, #colour.gold ul#colours li a.gold {
 	border: 3px solid #888
 }
+#colour.black .btn-outer{
+	opacity: 0;
+}
 #colour.black .btn-outer, #colour.red .btn-outer {
-	background: #141014;
+	/*background: #141014;*/
 	background: -moz-linear-gradient(top, #141014 0, #5d6976 17%, #181b1c 32%, #141a1d 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #141014), color-stop(17%, #5d6976), color-stop(32%, #181b1c), color-stop(100%, #141a1d));
 	background: -webkit-linear-gradient(top, #141014 0, #5d6976 17%, #181b1c 32%, #141a1d 100%);

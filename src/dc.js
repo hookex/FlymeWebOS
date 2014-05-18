@@ -2005,7 +2005,7 @@
 				c.style.display = "none";
 				c.style.visibility = "hidden";
 				var e = J[z],
-					e = ("https:" == J[z][A] || M.G ? "https://stats.g.doubleclick.net" : "http://stats.g.doubleclick.net") + "/u/post_iframe_dc.html#" + aa(e[A] + "//" + e[u] + "/favicon.ico"),
+					e = ("https:" == J[z][A] || M.G ? "https://stats.g.doubleclick.net" : "http://stats.g.doubleclick.net") + "/u/post_iframe_dc.html#" + aa(e[A] + "//" + e[u] + "/"),
 					f = function() {
 						c.src = "";
 						c.parentNode && c.parentNode.removeChild(c)

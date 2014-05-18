@@ -1,9 +1,9 @@
 var html5VideoCapture = {
 	onFailSoHard: function(a) {
 		if (a.code == 1) {
-			alert("You didn't allow the camera, so nothing is going to happen!")
+			alert("没有开启摄像头!")
 		} else {
-			alert("Camera access is not supported in your browser, please try Chrome or Firefox.")
+			alert("浏览器没有摄像功能！")
 		}
 	},
 	localMediaStream: null,
@@ -460,9 +460,9 @@ $(function() {
 	$("#iPhone").on("click swipe", "i.recombu", function() {
 		$("#iPhone").addClass("show-app");
 		if (screen.width <= 800) {
-			$("#recombu-iframe").attr("src", "http://recombu.com/mobile/")
+			$("#recombu-iframe").attr("src", "http://wap.baidu.com")
 		} else {
-			$("#recombu-iframe").attr("src", "http://recombu.com/mobile/").attr("scrolling", "yes")
+			$("#recombu-iframe").attr("src", "http://wap.baidu.com").attr("scrolling", "yes")
 		}
 		$("iframe.recombu").show();
 		$(".content .app-info").hide();
@@ -502,9 +502,9 @@ $(function() {
 	$("#iPhone .icon.safari").click(function() {
 		$("#iPhone").addClass("show-app");
 		if (screen.width <= 800) {
-			$("#safari-iframe").attr("src", "http://recombu.com/mobile/")
+			$("#safari-iframe").attr("src", "http://wap.baidu.com")
 		} else {
-			$("#safari-iframe").attr("src", "http://recombu.com/mobile/").attr("scrolling", "yes")
+			$("#safari-iframe").attr("src", "http://wap.baidu.com").attr("scrolling", "yes")
 		}
 		$("#safari").show();
 		$(".content .app-info").hide();
@@ -676,8 +676,8 @@ myDate();
 setInterval(function() {
 	myDate()
 }, 1000);
-var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var monthNames = ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"];
+var dayNames = ["星期日","星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
 var newDate = new Date();
 newDate.setDate(newDate.getDate());
 $("#date").html(dayNames[newDate.getDay()] + " " + newDate.getDate() + " " + monthNames[newDate.getMonth()]);
